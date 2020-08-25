@@ -10,6 +10,12 @@
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		346B293E23F32D2500DD909D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 346B293D23F32D2500DD909D /* GoogleService-Info.plist */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		66190A7324F5B94A0045BA64 /* ScanditBarcodeCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6F24F5B9470045BA64 /* ScanditBarcodeCapture.framework */; };
+		66190A7424F5B94A0045BA64 /* ScanditBarcodeCapture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6F24F5B9470045BA64 /* ScanditBarcodeCapture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66190A7624F5B94B0045BA64 /* ScanditCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6D24F5B9460045BA64 /* ScanditCaptureCore.framework */; };
+		66190A7724F5B94B0045BA64 /* ScanditCaptureCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6D24F5B9460045BA64 /* ScanditCaptureCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66190A7824F5B94C0045BA64 /* ScanditParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6E24F5B9460045BA64 /* ScanditParser.framework */; };
+		66190A7924F5B94C0045BA64 /* ScanditParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6E24F5B9460045BA64 /* ScanditParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9740EEB21CF90195004384FC /* Debug.xcconfig */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -19,12 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
+		66190A7524F5B94A0045BA64 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				66190A7924F5B94C0045BA64 /* ScanditParser.framework in Embed Frameworks */,
+				66190A7424F5B94A0045BA64 /* ScanditBarcodeCapture.framework in Embed Frameworks */,
+				66190A7724F5B94B0045BA64 /* ScanditCaptureCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +46,9 @@
 		346B293D23F32D2500DD909D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3D846D713EFC7A9CA7EF1C18 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		66190A6D24F5B9460045BA64 /* ScanditCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditCaptureCore.framework; sourceTree = "<group>"; };
+		66190A6E24F5B9460045BA64 /* ScanditParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditParser.framework; sourceTree = "<group>"; };
+		66190A6F24F5B9470045BA64 /* ScanditBarcodeCapture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditBarcodeCapture.framework; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774267092416F93F00AE2519 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
@@ -58,7 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66190A7324F5B94A0045BA64 /* ScanditBarcodeCapture.framework in Frameworks */,
 				E07324FBA0E883CB25672A17 /* Pods_Runner.framework in Frameworks */,
+				66190A7824F5B94C0045BA64 /* ScanditParser.framework in Frameworks */,
+				66190A7624F5B94B0045BA64 /* ScanditCaptureCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +138,9 @@
 		A97B1B10A5E6388EE08AF7B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66190A6F24F5B9470045BA64 /* ScanditBarcodeCapture.framework */,
+				66190A6D24F5B9460045BA64 /* ScanditCaptureCore.framework */,
+				66190A6E24F5B9460045BA64 /* ScanditParser.framework */,
 				F70D5D2D3BD3D60A6C2E3D00 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
@@ -150,11 +168,11 @@
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
-				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				017500B1B0E14467C288A632 /* [CP] Embed Pods Frameworks */,
 				E8FB1D4F2A30ABDDA0AC8121 /* [CP] Copy Pods Resources */,
 				34642AD5249972EA00306585 /* ShellScript */,
+				66190A7524F5B94A0045BA64 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+			shellScript = "#bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/ScanditCaptureCore.framework/strip-frameworks.sh\"\n/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
 		};
 		CC4777499F420956276F7F40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -447,6 +465,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -582,6 +601,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -613,6 +633,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

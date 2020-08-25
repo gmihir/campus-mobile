@@ -1,0 +1,339 @@
+BCSymbolMap Version: 2.0
+-[SDCParsedData initWithCpp:]
+-[SDCParsedData typeErasedCppImpl]
+-[SDCParsedData jsonString]
+-[SDCParsedData fieldsByName]
+-[SDCParsedData fields]
+-[SDCParsedData .cxx_destruct]
+-[SDCParsedData .cxx_construct]
+___clang_call_terminate
+-[SDCParsedData fields].cold.1
+__ZNSt3__16vectorINS_10shared_ptrIN3sdc11ParsedFieldEEENS_9allocatorIS4_EEEC2ERKS7_.cold.1
+__ZN6djinni18get_cpp_proxy_implI14SDCParsedFieldN3sdc11ParsedFieldEEEPT_RKNSt3__110shared_ptrIT0_EE.cold.1
+__ZZN6djinni18get_cpp_proxy_implI14SDCParsedFieldN3sdc11ParsedFieldEEEPT_RKNSt3__110shared_ptrIT0_EEENUlRKNS7_IvEEE_8__invokeESE_.cold.1
+_OBJC_IVAR_$_SDCParsedData._impl
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+/Users/scandit/builds/z4xgKiLb/0/mobile/data-capture-sdk/libs/sdc/parser/ios/src/SDCParsedData.mm
+/Users/scandit/builds/z4xgKiLb/0/mobile/data-capture-sdk
+__invoke
+third-party/djinni/support-lib/objc/DJICppWrapperCache+Private.h
+operator()
+~shared_ptr
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory
+__release_shared
+__libcpp_atomic_refcount_decrement<long>
+get_cpp_proxy_impl<SDCParsedField, sdc::ParsedField>
+vector
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/vector
+~__vector_base
+clear
+__destruct_at_end
+destroy<std::__1::shared_ptr<sdc::ParsedField> >
+__destroy<std::__1::shared_ptr<sdc::ParsedField> >
+destroy
+deallocate
+__libcpp_deallocate
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/new
+__do_deallocate_handle_size_align
+__do_deallocate_handle_size
+__do_call
+libs/sdc/parser/ios/src/SDCParsedData.mm
+~vector
+~Handle
+third-party/djinni/support-lib/objc/../proxy_cache_interface.hpp
+type_index
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/typeindex
+operator bool
+pair<SDCParsedField *, void *, false>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility
+static_pointer_cast<sdc::ParsedField, void>
+shared_ptr<void>
+__add_shared
+__libcpp_atomic_refcount_increment<long>
+shared_ptr<sdc::ParsedField>
+__construct_range_forward<std::__1::shared_ptr<sdc::ParsedField> *, std::__1::shared_ptr<sdc::ParsedField> *>
+__construct_at_end<std::__1::shared_ptr<sdc::ParsedField> *>
+construct<std::__1::shared_ptr<sdc::ParsedField>, std::__1::shared_ptr<sdc::ParsedField> &>
+__construct<std::__1::shared_ptr<sdc::ParsedField>, std::__1::shared_ptr<sdc::ParsedField> &>
+shared_ptr
+__vallocate
+allocate
+__libcpp_allocate
+size
+__vector_base
+__compressed_pair<nullptr_t, std::__1::allocator<std::__1::shared_ptr<sdc::ParsedField> > >
+__compressed_pair_elem<nullptr_t, void>
+Handle<>
+operator!=<std::__1::shared_ptr<sdc::ParsedField> *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator
+operator==<std::__1::shared_ptr<sdc::ParsedField> *, std::__1::shared_ptr<sdc::ParsedField> *>
+operator++
+get_cpp_proxy<SDCParsedField, std::__1::shared_ptr<sdc::ParsedField> >
+getFields
+libs/sdc/parser/main/include/sdc/parser/parsed_data.hh
+get
+~basic_string
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string
+__get_long_pointer
+__is_long
+getJsonData
+shared_ptr<sdc::ParsedData>
+assign
+operator=
+swap
+swap<std::__1::__shared_weak_count *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/type_traits
+swap<sdc::ParsedData *>
+-[SDCParsedField initWithCpp:]
+-[SDCParsedField typeErasedCppImpl]
+-[SDCParsedField name]
+-[SDCParsedField parsed]
+-[SDCParsedField rawString]
+-[SDCParsedField issues]
+-[SDCParsedField .cxx_destruct]
+-[SDCParsedField .cxx_construct]
+-[SDCParsedField issues].cold.1
+__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEEC2ERKS8_.cold.1
+_OBJC_IVAR_$_SDCParsedField._impl
+/Users/scandit/builds/z4xgKiLb/0/mobile/data-capture-sdk/libs/sdc/parser/ios/src/SDCParsedField.mm
+destroy<std::__1::basic_string<char> >
+__destroy<std::__1::basic_string<char> >
+libs/sdc/parser/ios/src/SDCParsedField.mm
+__construct_range_forward<std::__1::basic_string<char> *, std::__1::basic_string<char> *>
+__construct_at_end<std::__1::basic_string<char> *>
+construct<std::__1::basic_string<char>, std::__1::basic_string<char> &>
+__construct<std::__1::basic_string<char>, std::__1::basic_string<char> &>
+__compressed_pair<nullptr_t, std::__1::allocator<std::__1::basic_string<char> > >
+nsarrayWithCppVector<std::__1::basic_string<char>, NSString *(&)(const std::__1::basic_string<char> &)>
+libs/sdc/core/ios/include/ScanditCaptureCore/Private/SDCUtils.h
+operator!=<const std::__1::basic_string<char> *>
+operator==<const std::__1::basic_string<char> *, const std::__1::basic_string<char> *>
+getIssues
+libs/sdc/parser/main/include/sdc/parser/parsed_field.hh
+getStringValue
+getName
+swap<sdc::ParsedField *>
+__ZL10initializev
+-[SDCParser initWithCpp:]
+-[SDCParser typeErasedCppImpl]
++[SDCParser parserForContext:format:error:]
+-[SDCParser parseString:error:]
+-[SDCParser parseRawData:error:]
+-[SDCParser setOptions:error:]
+-[SDCParser componentId]
+-[SDCParser cppImpl]
+-[SDCParser updateFromJSONString:error:]
++[SDCParser parserFromJSONString:context:error:]
+-[SDCParser .cxx_destruct]
+-[SDCParser .cxx_construct]
+__ZN6djinni18get_cpp_proxy_implI9SDCParserN3sdc6ParserEEEPT_RKNSt3__110shared_ptrIT0_EE.cold.1
+__ZZN6djinni18get_cpp_proxy_implI9SDCParserN3sdc6ParserEEEPT_RKNSt3__110shared_ptrIT0_EEENUlRKNS7_IvEEE_8__invokeESE_.cold.1
+__ZN6djinni18get_cpp_proxy_implI13SDCParsedDataN3sdc10ParsedDataEEEPT_RKNSt3__110shared_ptrIT0_EE.cold.1
+__ZZN6djinni18get_cpp_proxy_implI13SDCParsedDataN3sdc10ParsedDataEEEPT_RKNSt3__110shared_ptrIT0_EEENUlRKNS7_IvEEE_8__invokeESE_.cold.1
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_SDCDataCaptureComponent
+__OBJC_LABEL_PROTOCOL_$_SDCDataCaptureComponent
+_OBJC_IVAR_$_SDCParser._impl
+/Users/scandit/builds/z4xgKiLb/0/mobile/data-capture-sdk/libs/sdc/parser/ios/src/SDCParser.mm
+get_cpp_proxy_impl<SDCParsedData, sdc::ParsedData>
+get_cpp_proxy_impl<SDCParser, sdc::Parser>
+pair<SDCParsedData *, void *, false>
+static_pointer_cast<sdc::ParsedData, void>
+pair<SDCParser *, void *, false>
+static_pointer_cast<sdc::Parser, void>
+shared_ptr<sdc::Parser>
+libs/sdc/parser/ios/src/SDCParser.mm
+fail
+libs/bar/include/bar/assert.hh
+get_cpp_proxy<SDCParsedData, std::__1::shared_ptr<sdc::ParsedData> >
+basic_string
+__init
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__string
+copy
+__get_short_pointer
+__set_short_size
+__set_long_size
+__set_long_cap
+__set_long_pointer
+__recommend
+__align_it<16>
+__compressed_pair<true, void>
+__compressed_pair_elem
+get_cpp_proxy<SDCParser, std::__1::shared_ptr<sdc::Parser> >
+to<sdc::ParserDataFormat, SDCParserDataFormat>
+swap<sdc::Parser *>
+to<SDCParserDataFormat, sdc::ParserDataFormat>
+initialize
+-[SDCParserDeserializer initWithCpp:]
+-[SDCParserDeserializer cppImpl]
+-[SDCParserDeserializer typeErasedCppImpl]
+-[SDCParserDeserializer parserFromJSONString:context:error:]
+-[SDCParserDeserializer updateParser:fromJSONString:error:]
++[SDCParserDeserializer parserDeserializer]
+-[SDCParserDeserializer setDelegate:]
+-[SDCParserDeserializer warnings]
+___33-[SDCParserDeserializer warnings]_block_invoke
+-[SDCParserDeserializer delegate]
+-[SDCParserDeserializer .cxx_destruct]
+-[SDCParserDeserializer .cxx_construct]
+__ZNSt3__1L20__throw_length_errorEPKc
+__ZNSt12length_errorC1EPKc
+__ZNSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEED1Ev
+__ZNSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEED0Ev
+__ZNSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEE16__on_zero_sharedEv
+__ZNSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+__ZN12_GLOBAL__N_128ParserDeserializerHelperImplD1Ev
+__ZN12_GLOBAL__N_128ParserDeserializerHelperImplD0Ev
+__ZN12_GLOBAL__N_128ParserDeserializerHelperImpl12createParserERKNSt3__110shared_ptrIN3sdc4core18DataCaptureContextEEENS3_16ParserDataFormatE
+__ZN12_GLOBAL__N_128ParserDeserializerHelperImpl20updateParserFromJsonERKNSt3__110shared_ptrIN3sdc6ParserEEERKNS2_INS3_4core9JsonValueEEE
+__ZZN6djinniL14get_objc_proxyIN3sdc4core31ParserDeserializerListenerProxyEU40objcproto29SDCParserDeserializerDelegate11objc_objectEENSt3__110shared_ptrIT_EEPT0_ENUlRU8__strongKP11objc_objectE_8__invokeESE_
+-[SDCParserDeserializer parserFromJSONString:context:error:].cold.1
+-[SDCParserDeserializer updateParser:fromJSONString:error:].cold.1
+__ZN3sdc18ParserDeserializer20updateParserFromJsonENSt3__110shared_ptrINS_6ParserEEENS2_INS_4core9JsonValueEEE.cold.1
+__ZN3sdc18ParserDeserializer20updateParserFromJsonENSt3__110shared_ptrINS_6ParserEEENS2_INS_4core9JsonValueEEE.cold.2
+-[SDCParserDeserializer warnings].cold.1
+-[SDCParserDeserializer .cxx_construct].cold.1
+__ZN6djinni18get_cpp_proxy_implI21SDCParserDeserializerN3sdc18ParserDeserializerEEEPT_RKNSt3__110shared_ptrIT0_EE.cold.1
+__ZZN6djinni18get_cpp_proxy_implI21SDCParserDeserializerN3sdc18ParserDeserializerEEEPT_RKNSt3__110shared_ptrIT0_EEENUlRKNS7_IvEEE_8__invokeESE_.cold.1
+__ZN6djinni18get_cpp_proxy_implI21SDCDataCaptureContextN3sdc4core18DataCaptureContextEEEPT_RKNSt3__110shared_ptrIT0_EE.cold.1
+__ZZN6djinni18get_cpp_proxy_implI21SDCDataCaptureContextN3sdc4core18DataCaptureContextEEEPT_RKNSt3__110shared_ptrIT0_EEENUlRKNS8_IvEEE_8__invokeESF_.cold.1
+___block_descriptor_20_e294_"NSString"16?0{basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >={__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >={__rep=(?={__long=II*}{__short=(?=Cc)[11c]}{__raw=[3L]})}}}4l
+___block_literal_global
+__OBJC_PROTOCOL_$_SDCDataCaptureComponentDeserializer
+__OBJC_LABEL_PROTOCOL_$_SDCDataCaptureComponentDeserializer
+__OBJC_PROTOCOL_$_ScanditCppProxy
+__OBJC_LABEL_PROTOCOL_$_ScanditCppProxy
+__OBJC_PROTOCOL_$_SDCDataCaptureComponentDeserializerPrivate
+__OBJC_LABEL_PROTOCOL_$_SDCDataCaptureComponentDeserializerPrivate
+_OBJC_IVAR_$_SDCParserDeserializer._impl
+_OBJC_IVAR_$_SDCParserDeserializer._listenerCache
+_OBJC_IVAR_$_SDCParserDeserializer._delegate
+__ZTVNSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEEE
+__ZTSNSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEEE
+__ZTINSt3__120__shared_ptr_emplaceIN12_GLOBAL__N_128ParserDeserializerHelperImplENS_9allocatorIS2_EEEE
+__ZTVN12_GLOBAL__N_128ParserDeserializerHelperImplE
+__ZTSN12_GLOBAL__N_128ParserDeserializerHelperImplE
+__ZTIN12_GLOBAL__N_128ParserDeserializerHelperImplE
+/Users/scandit/builds/z4xgKiLb/0/mobile/data-capture-sdk/libs/sdc/parser/ios/src/SDCParserDeserializer.mm
+get_cpp_proxy_impl<SDCDataCaptureContext, sdc::core::DataCaptureContext>
+get_cpp_proxy_impl<SDCParserDeserializer, sdc::ParserDeserializer>
+libs/sdc/parser/ios/src/SDCParserDeserializer.mm
+ListenerProxyCache
+libs/ios/proxy-cache/include/proxy-cache/listener_proxy.hh
+destroy<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy> >
+__destroy<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy> >
+updateParserFromJson
+libs/sdc/parser/main/include/sdc/parser/parser_deserializer.hh
+reserve
+~__split_buffer
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__split_buffer
+__swap_out_circular_buffer
+swap<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy> *>
+__construct_backward<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy> *>
+construct<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy>, std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy> >
+__construct<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy>, std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy> >
+__split_buffer
+capacity
+__end_cap
+first
+__get
+~ListenerProxy
+onParserDeserializationFinished
+libs/sdc/parser/ios/include/sdc/parser/parser_deserializer_listener_proxy.hh
+getObjcInstance
+get_cpp_proxy<SDCParserDeserializer, std::__1::shared_ptr<sdc::ParserDeserializer> >
+onParserDeserializationStarted
+~ParserDeserializerListenerProxy
+ListenerProxy
+Handle<__strong id<SDCParserDeserializerDelegate> &>
+shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>
+__on_zero_shared_weak
+__on_zero_shared
+~__shared_ptr_emplace
+~__compressed_pair
+~__compressed_pair_elem
+third-party/djinni/support-lib/objc/DJIObjcWrapperCache+Private.h
+pair<std::__1::shared_ptr<sdc::core::ParserDeserializerListenerProxy>, const __strong id &, false>
+shared_ptr<sdc::core::ParserDeserializerListenerProxy>
+make_shared<sdc::core::ParserDeserializerListenerProxy, const __strong id &>
+make_shared<const __strong id &>
+__shared_ptr_emplace<const __strong id &>
+__compressed_pair<std::__1::allocator<sdc::core::ParserDeserializerListenerProxy> &, const __strong id &>
+__compressed_pair_elem<const __strong id &, 0>
+ParserDeserializerListenerProxy
+~unique_ptr
+reset
+__shared_weak_count
+__shared_count
+pair<SDCDataCaptureContext *, void *, false>
+static_pointer_cast<sdc::core::DataCaptureContext, void>
+shared_ptr<sdc::core::DataCaptureContext>
+createParser
+get_cpp_proxy<SDCDataCaptureContext, std::__1::shared_ptr<sdc::core::DataCaptureContext> >
+~ParserDeserializerHelperImpl
+second
+pair<SDCParserDeserializer *, void *, false>
+static_pointer_cast<sdc::ParserDeserializer, void>
+shared_ptr<sdc::ParserDeserializer>
+~ParserDeserializer
+~enable_shared_from_this
+~weak_ptr
+length_error
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stdexcept
+__throw_length_error
+mutex
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__mutex_base
+~ListenerProxyCache
+libs/sdc/parser/ios/include/ScanditParser/SDCParserDeserializer.h
+__33-[SDCParserDeserializer warnings]_block_invoke
+nsarrayWithCppVector<std::__1::basic_string<char>, NSString *(^)(std::__1::basic_string<char>)>
+setListener
+swap<sdc::ParserDeserializerListener *>
+get_objc_proxy<sdc::core::ParserDeserializerListenerProxy, id<SDCParserDeserializerDelegate> >
+static_pointer_cast<sdc::core::ParserDeserializerListenerProxy, void>
+setHelper
+swap<sdc::ParserDeserializerHelper *>
+shared_ptr<(anonymous namespace)::ParserDeserializerHelperImpl>
+make_shared<(anonymous namespace)::ParserDeserializerHelperImpl>
+make_shared<>
+__shared_ptr_emplace
+__compressed_pair<std::__1::allocator<(anonymous namespace)::ParserDeserializerHelperImpl>, true>
+ParserDeserializerHelperImpl
+create
+make_shared<sdc::ParserDeserializer>
+__enable_weak_this<sdc::ParserDeserializer, sdc::ParserDeserializer>
+operator=<sdc::ParserDeserializer>
+swap<sdc::ParserDeserializer *>
+weak_ptr<sdc::ParserDeserializer>
+__add_weak
+__compressed_pair<std::__1::allocator<sdc::ParserDeserializer>, true>
+ParserDeserializer
+DataCaptureComponentDeserializer
+libs/sdc/core/main/include/sdc/core/data_capture_component_deserializer.hh
+__ZNSt3__110shared_ptrIN3sdc11ParsedFieldEE11make_sharedIJNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESA_SA_NS_6vectorISA_NS8_ISA_EEEEEEES3_DpOT_.cold.1
+__ZNSt3__110shared_ptrIN3sdc11ParsedFieldEE11make_sharedIJNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESA_SA_NS_6vectorISA_NS8_ISA_EEEEEEES3_DpOT_.cold.2
+____ZN3bar19SerialDispatchQueue4syncIZN3sdc6Parser6createERKNSt3__110shared_ptrINS2_4core18DataCaptureContextEEENS2_16ParserDataFormatEE3$_0EENS4_12remove_constINS4_16remove_referenceIDTclfp_EEE4typeEE4typeEOT__block_invoke
+___copy_helper_block_ea4_20r
+___destroy_helper_block_ea4_20r
+__ZN3sdc6Parser11parseStringERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE.cold.1
+___block_descriptor_tmp
+__ZNSt3__16vectorINS_4pairIN3sdc16ParserDataFormatEPKcEENS_9allocatorIS6_EEED1Ev
+__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEEC1ESt16initializer_listIS6_E
+__ZNSt16invalid_argumentC1EPKc
+__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+__ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE7seekposENS_4fposI11__mbstate_tEEj
+__ZNSt3__1L20__throw_bad_weak_ptrEv
+__GLOBAL__sub_I_parser_deserializer.cc
+__ZN3sdc18ParserDeserializer14parserFromJsonENSt3__110shared_ptrINS_4core18DataCaptureContextEEENS2_INS3_9JsonValueEEE.cold.1
+__ZN3sdc18ParserDeserializer14parserFromJsonENSt3__110shared_ptrINS_4core18DataCaptureContextEEENS2_INS3_9JsonValueEEE.cold.2
+__ZN3sdc4core9JsonValue13getEnumForKeyINS_16ParserDataFormatEEET_RKNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEERKNS5_6vectorINS5_4pairIS4_PKcEENS9_ISI_EEEE.cold.1
+__ZN3sdc18ParserDeserializer14updateFromJsonENSt3__110shared_ptrINS_4core20DataCaptureComponentEEENS2_INS3_9JsonValueEEE.cold.1
+__ZN3sdc18ParserDeserializer14updateFromJsonENSt3__110shared_ptrINS_4core20DataCaptureComponentEEENS2_INS3_9JsonValueEEE.cold.2
+__ZN3sdc18ParserDeserializer8fromJsonENSt3__110shared_ptrINS_4core18DataCaptureContextEEENS2_INS3_9JsonValueEEE.cold.1
+__ZN3sdc18ParserDeserializer8fromJsonENSt3__110shared_ptrINS_4core18DataCaptureContextEEENS2_INS3_9JsonValueEEE.cold.2
+__ZN3sdc4core9JsonValue11getForKeyAsINSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEEET_RKS9_.cold.1
+__ZN3sdc4core9JsonValue11getForKeyAsINSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEEET_RKS9_RKSA_.cold.1
+llvm.loop.isvectorized
+__ZNSt3__110shared_ptrIN6djinni10ProxyCacheINS1_20ObjcProxyCacheTraitsEE5PimplEEC2IS5_EEPT_NS_9enable_ifIXsr14is_convertibleIS9_PS5_EE5valueENS6_5__natEE4typeE.cold.1
+__ZNSt3__110shared_ptrIN6djinni10ProxyCacheINS1_19CppProxyCacheTraitsEE5PimplEEC2IS5_EEPT_NS_9enable_ifIXsr14is_convertibleIS9_PS5_EE5valueENS6_5__natEE4typeE.cold.1

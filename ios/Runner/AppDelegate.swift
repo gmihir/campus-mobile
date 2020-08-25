@@ -2,6 +2,8 @@ import UIKit
 import Flutter
 import GoogleMaps
 import Firebase
+import ScanditCaptureCore
+import ScanditBarcodeCapture
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
