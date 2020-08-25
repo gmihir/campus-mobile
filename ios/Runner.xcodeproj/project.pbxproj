@@ -16,6 +16,8 @@
 		66190A7724F5B94B0045BA64 /* ScanditCaptureCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6D24F5B9460045BA64 /* ScanditCaptureCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66190A7824F5B94C0045BA64 /* ScanditParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6E24F5B9460045BA64 /* ScanditParser.framework */; };
 		66190A7924F5B94C0045BA64 /* ScanditParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66190A6E24F5B9460045BA64 /* ScanditParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		669D5B0124F5C8C800DD4BB1 /* ScannerViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D5B0024F5C8C800DD4BB1 /* ScannerViewFactory.swift */; };
+		669D5B0324F5CAD600DD4BB1 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D5B0224F5CAD600DD4BB1 /* ScannerView.swift */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9740EEB21CF90195004384FC /* Debug.xcconfig */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		66190A6D24F5B9460045BA64 /* ScanditCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditCaptureCore.framework; sourceTree = "<group>"; };
 		66190A6E24F5B9460045BA64 /* ScanditParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditParser.framework; sourceTree = "<group>"; };
 		66190A6F24F5B9470045BA64 /* ScanditBarcodeCapture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditBarcodeCapture.framework; sourceTree = "<group>"; };
+		669D5B0024F5C8C800DD4BB1 /* ScannerViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewFactory.swift; sourceTree = "<group>"; };
+		669D5B0224F5CAD600DD4BB1 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774267092416F93F00AE2519 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+				669D5B0024F5C8C800DD4BB1 /* ScannerViewFactory.swift */,
+				669D5B0224F5CAD600DD4BB1 /* ScannerView.swift */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -377,6 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				669D5B0324F5CAD600DD4BB1 /* ScannerView.swift in Sources */,
+				669D5B0124F5C8C800DD4BB1 /* ScannerViewFactory.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

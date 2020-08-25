@@ -12,6 +12,8 @@ import ScanditBarcodeCapture
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     // Use Firebase library to configure APIs
+    let viewFactory = ScannerViewFactory()
+    registrar(forPlugin: "Scanner")?.register(viewFactory, withId: "ScannerView")
     FirebaseApp.configure()
     GeneratedPluginRegistrant.register(with: self)
     GMSServices.provideAPIKey("AIzaSyAwHFV7LL99A-PXa7J1k7H1MhT4_RUgZtk")
