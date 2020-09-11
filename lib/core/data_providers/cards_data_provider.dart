@@ -99,11 +99,13 @@ class CardsDataProvider extends ChangeNotifier {
 
         // add new cards to the top of the list
         for (String card in _availableCards.keys) {
+          print(card);
           if (_studentCards.contains(card)) continue;
           if (_staffCards.contains(card)) continue;
           if (_signedOutCards.contains(card)) continue;
           if (!_cardOrder.contains(card) &&
               (_availableCards[card].cardActive ?? false)) {
+
             _cardOrder.insert(0, card);
           }
           // keep all new cards activated by default
@@ -150,6 +152,7 @@ class CardsDataProvider extends ChangeNotifier {
       await _cardOrderBox.put(DataPersistence.cardOrder, _cardOrder);
     }
     _cardOrder = _cardOrderBox.get(DataPersistence.cardOrder);
+    print(_cardOrder);
     notifyListeners();
   }
 

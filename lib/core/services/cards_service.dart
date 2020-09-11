@@ -28,6 +28,7 @@ class CardsService {
       String _response = await _networkHelper.fetchData(cardListEndpoint);
       /// parse data
       _cardsModel = cardsModelFromJson(_response);
+      print(_cardsModel);
       _isLoading = false;
       return true;
     } catch (e) {

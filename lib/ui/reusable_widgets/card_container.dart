@@ -40,19 +40,22 @@ class CardContainer extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            ListTile(
-              title: Text(
-                titleText,
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 20.0,
+            Container(
+              width: MediaQuery.of(context).size.width,
+              child: ListTile(
+                title: Text(
+                  titleText,
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20.0,
+                  ),
                 ),
-              ),
-              trailing: ButtonBar(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  buildMenu(),
-                ],
+                trailing: ButtonBar(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    buildMenu(),
+                  ],
+                ),
               ),
             ),
             buildBody(context),

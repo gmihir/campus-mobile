@@ -35,6 +35,7 @@ class AuthenticationModel extends HiveObject {
   });
 
   factory AuthenticationModel.fromJson(Map<String, dynamic> json) {
+    print(json["access_token"]);
     ///this if statement is added so refresh token data can be used
     if (json['expires_in'] != null) {
       json['expiration'] = json['expires_in'];
