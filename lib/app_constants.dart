@@ -71,6 +71,7 @@ class RouteTitles {
     'special_events/special_events_list_view': 'Special Events',
     'special_events/special_events_filter_view': 'Special Events',
     'special_events/special_events_detail_view': 'Special Events',
+    'OfficeEnvironment': 'Office Environment'
   };
 }
 
@@ -149,5 +150,6 @@ class CardTitleConstants {
     'parking': 'Parking',
     'special_events': 'Special Events',
     'weather': 'Weather',
+    'OfficeEnvironment': 'Office Environment'
   };
 }

@@ -15,6 +15,7 @@ import 'package:campus_mobile_experimental/ui/myucsdchart/myucsdchart.dart';
 import 'package:campus_mobile_experimental/ui/native_scanner/native_scanner_card.dart';
 import 'package:campus_mobile_experimental/ui/news/news_card.dart';
 import 'package:campus_mobile_experimental/ui/notices/notices_card.dart';
+import 'package:campus_mobile_experimental/ui/office_environment/office_environment.dart';
 import 'package:campus_mobile_experimental/ui/parking/parking_card.dart';
 import 'package:campus_mobile_experimental/ui/scanner/scanner_card.dart';
 import 'package:campus_mobile_experimental/ui/shuttle/shuttle_card.dart';
@@ -126,6 +127,9 @@ class _HomeState extends State<Home> {
           break;
         case 'shuttle':
           orderedCards.add(ShuttleCard());
+          break;
+        case 'OfficeEnvironment':
+          orderedCards.add(OfficeEnvironmentCard());
           break;
       }
     }

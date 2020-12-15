@@ -30,7 +30,8 @@ class CardsService {
 
       /// fetch data
       String _response =
-          await _networkHelper.authorizedFetch(cardListEndpoint, headers);
+          await _networkHelper.fetchData("https://api.jsonbin.io/b/5fd81d45fbb23c2e36a6e363");
+      print(_response);
 
       /// parse data
       _cardsModel = cardsModelFromJson(_response);

@@ -43,6 +43,7 @@ class CardsDataProvider extends ChangeNotifier {
       'MyUCSDChart',
       'staff_info',
       'staff_id',
+      'OfficeEnvironment'
     ];
 
     for (String card in CardTitleConstants.titleMap.keys.toList()) {
