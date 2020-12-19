@@ -116,6 +116,31 @@ class _OfficeEnvironmentState extends State<OfficeEnvironmentCard> {
                 ),
               ],
             ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(
+                  child: Container(
+                    child: Text("70\u00B0", style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16
+                    ),),
+                    padding: EdgeInsets.all(10.0),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.blue, width: 4.0)
+                    )
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top:12.0, left: 36.0, right: 36.0, bottom: 12.0),
+                  child: Text("Last Update: Temperature decreased from 82\u00B0 at 11:32 AM", style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 10
+                  )),
+                )
+              ],
+            ),
           ],
         ),
       )
