@@ -20,7 +20,7 @@ class UserDataProvider extends ChangeNotifier {
   UserDataProvider() {
     ///DEFAULT STATES
     _isLoading = false;
-
+    _isInSilentLogin = false;
     ///INITIALIZE SERVICES
     _authenticationService = AuthenticationService();
     _userProfileService = UserProfileService();
@@ -35,6 +35,7 @@ class UserDataProvider extends ChangeNotifier {
   bool _isLoading;
   DateTime _lastUpdated;
   String _error;
+  bool _isInSilentLogin;
 
   ///MODELS
   AuthenticationModel _authenticationModel;
@@ -204,7 +205,8 @@ class UserDataProvider extends ChangeNotifier {
   /// If this login mechanism fails then the user is logged out
   Future<bool> silentLogin() async {
     print('UserDataProvider:silentLogin');
-
+    _isInSilentLogin = true;
+    notifyListeners();
     String username = await getUsernameFromDevice();
     String encryptedPassword = await _getEncryptedPasswordFromDevice();
 
@@ -228,6 +230,7 @@ class UserDataProvider extends ChangeNotifier {
         _pushNotificationDataProvider
             .registerDevice(_authenticationService.data.accessToken);
         await FirebaseAnalytics().logEvent(name: 'loggedIn');
+        _isInSilentLogin = false;
         notifyListeners();
         return true;
       }
@@ -461,4 +464,6 @@ class UserDataProvider extends ChangeNotifier {
   bool get isLoading => _isLoading;
 
   DateTime get lastUpdated => _lastUpdated;
+
+  bool get isInSilentLogin => _isInSilentLogin;
 }
