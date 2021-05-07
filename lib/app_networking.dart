@@ -35,6 +35,7 @@ class NetworkHelper {
   Future<dynamic> authorizedFetch(
       String url, Map<String, String> headers) async {
     Dio dio = new Dio();
+    print(headers);
     dio.options.connectTimeout = 20000;
     dio.options.receiveTimeout = 20000;
     dio.options.responseType = ResponseType.plain;

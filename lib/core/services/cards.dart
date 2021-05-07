@@ -19,16 +19,24 @@ class CardsService {
 
     /// API Manager Service
     try {
-      String cardListEndpoint =
-          "https://api-qa.ucsd.edu:8243/defaultcards/v6.0.0/defaultcards?ucsdaffiliation=" +
-              ucsdAffiliation;
-      String _response =
-          await _networkHelper.authorizedFetch(cardListEndpoint, headers);
+      // String cardListEndpoint =
+      //     "https://api-qa.ucsd.edu:8243/defaultcards/v6.0.0/defaultcards?ucsdaffiliation=" +
+      //         ucsdAffiliation;
+      String cardListEndpoint = "https://api.jsonbin.io/b/60947eb43538ba6e9bc98b78";
+      print("endpoint: ${cardListEndpoint}");
+      print("headers: ${headers}");
+      // String _response =
+      //     await _networkHelper.authorizedFetch(cardListEndpoint, headers);
+      String _response = await _networkHelper.fetchData(cardListEndpoint);
+      print("response: ${_response}");
       _cardsModel = cardsModelFromJson(_response);
       _isLoading = false;
       return true;
     } catch (e) {
+      print("headers: ${headers}");
+      print("in error");
       if (e.toString().contains("401")) {
+        print("getting new token");
         if (await getNewToken()) {
           return await fetchCards(ucsdAffiliation);
         }

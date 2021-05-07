@@ -43,6 +43,8 @@ class CardsView extends StatelessWidget {
 
   List<Widget> createList(BuildContext context) {
     List<Widget> list = [];
+    print("_cardsDataProvider.cardOrder(profile/cards.dart(46): ${_cardsDataProvider.cardOrder}");
+    print("_cardsDataProvider.availableCards(profile/cards.dart(47): ${_cardsDataProvider.availableCards}");
     for (String card in _cardsDataProvider.cardOrder) {
       if (card == 'NativeScanner') continue;
       list.add(ListTile(

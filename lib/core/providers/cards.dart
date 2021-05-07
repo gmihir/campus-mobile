@@ -77,6 +77,7 @@ class CardsDataProvider extends ChangeNotifier {
   final CardsService _cardsService = CardsService();
 
   void updateAvailableCards(String ucsdAffiliation) async {
+    print("in updateAvailableCards(providers/cards.dart(80)");
     _isLoading = true;
     _error = null;
     notifyListeners();
@@ -133,8 +134,10 @@ class CardsDataProvider extends ChangeNotifier {
             _cardStates.keys.where((card) => _cardStates[card]).toList());
       }
     } else {
+      print("ERROR IN UPDATEAVAILABLECARDS: ${_cardsService.error}");
       _error = _cardsService.error;
     }
+    print("updatedCards complete: ${availableCards.toString()}");
     _isLoading = false;
     notifyListeners();
   }
